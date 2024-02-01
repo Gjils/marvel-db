@@ -1,0 +1,12 @@
+.list {
+	&__wrapper {
+		display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+		justify-content: space-between;
+    margin-bottom: 45px;
+	}
+	&__load-more-button {
+		margin: 0 auto;
+	}
+}

@@ -1,7 +1,6 @@
 .header {
-	position: fixed;
 	width: 100%;
-	top: 50px;
+	margin-top: 50px;
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -17,7 +16,16 @@
 	&__status {
 		font-size: 24px;
 		font-weight: bold;
-		.option__active {
+		.option {
+			cursor: pointer;
+			background-color: transparent;
+			border: none;
+			color: inherit;
+			font-size: inherit;
+			font-weight: inherit;
+			font-family: inherit;
+		}
+		.active {
 			color: #9f0013;
 		}
 	}

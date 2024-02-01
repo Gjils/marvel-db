@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./index.scss";
 
 export default function Header() {
 	return (
@@ -8,8 +8,8 @@ export default function Header() {
 					<span className="text-red">Marvel</span> information portal
 				</div>
 				<div className="header__status">
-					<span className="option__active">Characters</span> /{" "}
-					<span className="">Comics</span>
+					<button className="option active">Characters</button> /{" "}
+					<button className="option">Comics</button>
 				</div>
 			</div>
 		</header>
