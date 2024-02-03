@@ -1,14 +1,16 @@
+import Title from "../../../shared/Title"
+
 import "./style.scss"
 
 export default function Card() {
 	return (
 		<div className="character with-shadow">
 			<img
-				src="../../../../public/thor.jpeg"
+				src="/thor.jpeg"
 				alt="thor"
 				className="character__image"
 			/>
-			<div className="character__name">THOR</div>
+			<Title text="THOR" color="white" className="character__name"/>
 		</div>
 	);
 }

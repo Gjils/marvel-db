@@ -1,6 +1,8 @@
 import ComicsItem from "../ComicsItem";
 
 import Button from "../../../shared/Button";
+import Title from "../../../shared/Title";
+import Paragraph from "../../../shared/Paragraph";
 
 import "./style.scss";
 
@@ -14,16 +16,15 @@ export default function Info() {
 		<ComicsItem />,
 		<ComicsItem />,
 	];
+
 	return (
 		<div className="info with-shadow">
-			<div className="info__top">
-				<img
-					src="../../../../public/thor.jpeg"
-					alt="thor"
-					className="info__image"
-				/>
+			<Title text="Please select a character to see information" size="18px" className="info__not-selected__title"/>
+			<img src="/Skeleton.png" alt="skeleton" className="info__not-selected__skeleton"/>
+			{/* <div className="info__top">
+				<img src="/thor.jpeg" alt="thor" className="info__image" />
 				<div className="info__top__flex">
-					<div className="info__title">THOR</div>
+					<Title text="THOR" />
 					<div className="info__links">
 						<Button
 							text="HOMEPAGE"
@@ -38,19 +39,19 @@ export default function Info() {
 					</div>
 				</div>
 			</div>
-			<div className="info__description">
-				In Norse mythology, Loki is a god or jötunn (or both). Loki is the son
+			<Paragraph
+				text="In Norse mythology, Loki is a god or jötunn (or both). Loki is the son
 				of Fárbauti and Laufey, and the brother of Helblindi and Býleistr. By
 				the jötunn Angrboða, Loki is the father of Hel, the wolf Fenrir, and the
 				world serpent Jörmungandr. By Sigyn, Loki is the father of Nari and/or
 				Narfi and with the stallion Svaðilfari as the father, Loki gave birth—in
 				the form of a mare—to the eight-legged horse Sleipnir. In addition, Loki
-				is referred to as the father of Váli in the Prose Edda.
-			</div>
+				is referred to as the father of Váli in the Prose Edda."
+			size="16px" className="info__description"/>
 			<div className="info__comics">
-				<div className="info__comics__title">Comics:</div>
+				<Title text="Comics:" size="18px" className="info__comics__title"/>
 				<div className="info__comics__list">{comics}</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }

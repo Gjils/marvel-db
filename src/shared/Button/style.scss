@@ -2,7 +2,7 @@
 	font-weight: normal;
 	font-family: inherit;
 	display: block;
-	height: 33px;
+	height: 36px;
 	border: none;
 	clip-path: polygon(
 		10px 0%,
@@ -12,12 +12,6 @@
 		0 100%,
 		0% 10px
 	);
-	&.red {
-		background-color: #9f0013;
-	}
-	&.gray {
-		background-color: #5c5c5c;
-	}
 	transition: 0.2s;
 	cursor: pointer;
 	&:hover {

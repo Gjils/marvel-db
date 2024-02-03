@@ -1,6 +1,13 @@
 .info {
 	width: 425px;
 	padding: 20px;
+	background-color: white;
+	&__not-selected {
+		&__title {
+			text-align: center;
+			padding-bottom: 20px;
+		}
+	}
 	&__top {
 		display: flex;
     margin-bottom: 15px;
@@ -15,24 +22,16 @@
 		aspect-ratio: 1;
 		margin-right: 20px;
 	}
-	&__title {
-		font-size: 22px;
-		font-weight: 900;
-	}
 	&__links {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
 	}
 	&__description {
-		font-size: 14px;
-		line-height: 18px;
     margin-bottom: 30px;
 	}
   &__comics {
     &__title {
-      font-size: 18px;
-      font-weight: 900;
       margin-bottom: 10px;
     }
     &__list {

@@ -8,8 +8,8 @@ export default function Header() {
 					<span className="text-red">Marvel</span> information portal
 				</div>
 				<div className="header__status">
-					<button className="option active">Characters</button> /{" "}
-					<button className="option">Comics</button>
+					<a className="option active">Characters</a> /{" "}
+					<a className="option">Comics</a>
 				</div>
 			</div>
 		</header>

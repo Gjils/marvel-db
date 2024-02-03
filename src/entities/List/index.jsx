@@ -2,10 +2,12 @@ import Button from "../../shared/Button/index";
 
 import "./style.scss";
 
-export default function ({ elements, className }) {
+export default function ({ elements, className, columns, width }) {
 	return (
 		<section className={`list ${className ? className : ""}`}>
-			<div className="list__wrapper">
+			<div className="list__wrapper" style={{
+				gridTemplateColumns: `repeat(${columns}, ${width})`,
+			}}>
 				{elements.map((item) => (
 					<div>{item}</div>
 				))}

@@ -1,0 +1,22 @@
+.comics-info {
+  position: relative;
+	margin-top: 40px;
+	display: flex;
+  column-gap: 50px;
+  &__right {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+	&__image {
+		width: 293px;
+	}
+  &__back {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    text-decoration: none;
+    color: inherit
+  }
+}

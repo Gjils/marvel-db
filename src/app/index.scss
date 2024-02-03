@@ -20,18 +20,27 @@
 }
 
 .container {
-	max-width: 1110px;
-	margin: 0 auto;
+	padding: 0 calc((100% - 1100px) / 2);
 }
 
 .with-shadow {
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
-body {
-	background-image: url("../../public/main-bg.png");
-	background-repeat: no-repeat;
-	background-position: bottom right;
-	background-size: 467px;
-	padding-bottom: 40px;
+.red-text {
+	color: #9f0013;
+}
+.white-text {
+	color: white
+}
+.gray-text {
+	color: #5c5c5c;
+}
+
+.red-bg {
+	background-color: #9f0013;
+}
+
+.gray-bg {
+	background-color: #5c5c5c;
 }

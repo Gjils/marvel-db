@@ -1,5 +1,5 @@
 import Info from "./Info/Info";
-import Action from "./Action/Actions";
+import Action from "./Action/Action";
 
 import "./style.scss";
 
