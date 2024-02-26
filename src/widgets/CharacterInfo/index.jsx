@@ -1,16 +1,15 @@
-import Title from "../../shared/Title";
-import Paragraph from "../../shared/Paragraph";
+import Title from "../../shared/components/Title";
+import Paragraph from "../../shared/components/Paragraph";
+import Image from "../../shared/components/Image";
+
+import thor from "../../assets/images/thor.jpeg";
 
 import "./style.scss";
 
 export default function CharacterInfo() {
 	return (
 		<div className="character-info">
-			<img
-				src="/thor.jpeg"
-				alt="thor"
-				className="character-info__image"
-			/>
+			<Image url={thor} alt="thor" width="293px" />
 			<div className="character-info__right">
 				<Title text="THOR" />
 				<Paragraph

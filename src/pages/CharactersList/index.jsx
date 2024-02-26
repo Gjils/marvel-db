@@ -1,7 +1,7 @@
 import RandomCharacter from "../../widgets/RandomCharacter";
 import Characters from "../../widgets/Characters";
 
-import "./style.scss"
+import "./style.scss";
 
 export default function CharactersList() {
 	return (

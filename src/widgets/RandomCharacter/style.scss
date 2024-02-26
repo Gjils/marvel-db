@@ -1,8 +1,24 @@
 .random-character {
-  display: flex;
-  margin-top: 40px;
-  &__block {
-    width: 50%;
-    padding: 30px;
-  }
+	min-height: 260px;
+	display: flex;
+	margin-top: 40px;
+	&__block {
+		width: 50%;
+		padding: 30px;
+	}
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__icon {
+		width: 40px;
+	}
+}
+
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

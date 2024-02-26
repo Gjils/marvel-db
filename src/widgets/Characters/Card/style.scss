@@ -1,18 +1,15 @@
+@import "../../../shared/variables/variables.scss";
+
 .character {
-  cursor: pointer;
-  transition: .3s;
-  display: block;
-  height: 318px;
-  background-color: #232222;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 5px 5px 20px #9F0013;
-  }
-  &__image {
-    width: 200px;
-    aspect-ratio: 1;
-  }
-  &__name {
-    margin: 0 0 0 10px;
-  }
+	cursor: pointer;
+	transition: 0.3s;
+	display: block;
+	height: 318px;
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 5px 5px 20px $main-red;
+	}
+	&__name {
+		margin: 0 0 0 10px;
+	}
 }

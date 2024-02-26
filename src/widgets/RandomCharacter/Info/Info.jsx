@@ -1,37 +1,41 @@
-import Button from "../../../shared/Button";
-import Paragraph from "../../../shared/Paragraph";
-import Title from '../../../shared/Title';
+import Button from "../../../shared/components/Button";
+import Paragraph from "../../../shared/components/Paragraph";
+import Title from "../../../shared/components/Title";
+import Image from "../../../shared/components/Image";
 
 import "./style.scss";
 
-export default function Info() {
+export default function Info({ character }) {
+	const { name, description, thumbnail, homepage, wiki } = character;
 	return (
 		<div className="random-character__block info-card">
-			<img
-				alt="thor"
-				src="/thor.jpeg"
+			<Image
+				url={thumbnail}
+				alt={name}
+				width="200px"
 				className="info-card__image"
-			></img>
+			/>
 			<div className="info-card__info">
 				<div className="info-card__info__top">
-					<Title text="THOR"/>
-					<Paragraph
-						text="As the Norse God of thunder and lightning, Thor wields one of the
-						greatest weapons ever made, the enchanted hammer Mjolnir. While
-						others have described Thor as an over-muscled, oafish imbecile, he's
-						quite smart and compassionate..."
-					/>
+					<Title text={name} />
+					<Paragraph text={description} />
 				</div>
 				<div className="info-card__info__links">
 					<Button
 						text="HOMEPAGE"
 						color="red"
 						className="info-card__info__links__link"
+						onClick={() => {
+							location.assign(homepage);
+						}}
 					/>
 					<Button
 						text="WIKI"
 						color="grey"
 						className="info-card__info__links__link"
+						onClick={() => {
+							location.assign(wiki);
+						}}
 					/>
 				</div>
 			</div>

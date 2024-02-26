@@ -1,9 +1,14 @@
+@import "../../shared/variables/variables.scss";
+
 .comics-notification {
-  margin-top: 40px;
-  height: 100px;
-  background: right 20px center / contain no-repeat url("/Avengers\ logo.png"), left 20px center / contain no-repeat url("/Avengers.png"), #232222;
-  padding-left: 284px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	margin-top: 40px;
+	height: 100px;
+	background: right 20px center / contain no-repeat
+			url("../../assets/images/Avengers\ logo.png"),
+		left 20px center / contain no-repeat url("../../assets/images/Avengers.png"),
+		$main-black;
+	padding-left: 284px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }

@@ -1,8 +1,12 @@
 import ComicsItem from "../ComicsItem";
 
-import Button from "../../../shared/Button";
-import Title from "../../../shared/Title";
-import Paragraph from "../../../shared/Paragraph";
+import Button from "../../../shared/components/Button";
+import Title from "../../../shared/components/Title";
+import Paragraph from "../../../shared/components/Paragraph";
+import Image from "../../../shared/components/Image";
+
+import skeleton from "../../../assets/images/Skeleton.png";
+import thor from "../../../assets/images/thor.jpeg"
 
 import "./style.scss";
 
@@ -19,10 +23,14 @@ export default function Info() {
 
 	return (
 		<div className="info with-shadow">
-			<Title text="Please select a character to see information" size="18px" className="info__not-selected__title"/>
-			<img src="/Skeleton.png" alt="skeleton" className="info__not-selected__skeleton"/>
-			{/* <div className="info__top">
-				<img src="/thor.jpeg" alt="thor" className="info__image" />
+			{/* <Title
+				text="Please select a character to see information"
+				size="18px"
+				className="info__not-selected__title"
+			/>
+			<Image url={skeleton} alt="skeleton" width="100%"/> */}
+			<div className="info__top">
+				<Image url={thor} alt="thor" width="150px" className="info__image"/>
 				<div className="info__top__flex">
 					<Title text="THOR" />
 					<div className="info__links">
@@ -51,7 +59,7 @@ export default function Info() {
 			<div className="info__comics">
 				<Title text="Comics:" size="18px" className="info__comics__title"/>
 				<div className="info__comics__list">{comics}</div>
-			</div> */}
+			</div>
 		</div>
 	);
 }

@@ -2,8 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #232222;
-	background-image: url("/random-action.png");
+	background-image: url("../../../assets/images/random-action.png");
 	background-repeat: no-repeat;
 	background-position: bottom 20px right -35px;
 	&__suggestion {
